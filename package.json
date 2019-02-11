@@ -12,6 +12,11 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0"
   },
+  "engines": {
+    "node": "8.x",
+    "npm": "5.x",
+    "yarn": "1.10.x"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
