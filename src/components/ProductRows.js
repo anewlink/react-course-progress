@@ -1,12 +1,21 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const ProductRows = () => {
+const ProductRows = props => {
+  const {name, price} = props.product
   return (
     <tr>
-      <td>Football</td>
-      <td>$4.99</td>
+      <td>{name}</td>
+      <td>{price}</td>
     </tr>
   )
+}
+
+ProductRows.propTypes = {
+  product: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    price: PropTypes.string.isRequired
+  })
 }
 
 export default ProductRows
